@@ -2,6 +2,7 @@ import React, { useState, useEffect  } from 'react';
 import {  useSelector } from 'react-redux'; 
 import { toast } from 'react-toastify';
 import FormContainer from '../../components/FormContainer';
+import Loader from '../../components/Loader';
 
 import { auth } from '../../firebase/firebase';
 const ForgotPasswordPage = ({ history }) => {
@@ -35,7 +36,7 @@ const ForgotPasswordPage = ({ history }) => {
     }
     return <>
         {
-            loading ? <h1>Loading...</h1> : 
+            loading ?  <Loader /> : 
             <FormContainer>
                 <h4>Forgot Password</h4>
                 <form onSubmit={submitHandler}>

@@ -8,6 +8,7 @@ import { saveAddress } from '../../redux/user/asyncActionCreator';
 import ReactQuill from 'react-quill';
 import { applyCoupon } from '../../redux/coupon/asyncActionCreator';
 import Message from '../../components/Message';
+import 'react-quill/dist/quill.snow.css';
 const CheckOutPage = ({ history }) => {
 
     const [ address, setAddress ] = useState('')
