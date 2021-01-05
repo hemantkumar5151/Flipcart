@@ -1,0 +1,28 @@
+{
+  "name": "flipcart",
+  "version": "1.0.0",
+  "description": "Mern App",
+  "main": "server.js",
+  "scripts": {
+    "backend": "nodemon backend/server.js ",
+    "frontend": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemantkumar5151/Flipcart.git"
+  },
+  "author": "hemant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hemantkumar5151/Flipcart/issues"
+  },
+  "homepage": "https://github.com/hemantkumar5151/Flipcart#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "stripe": "^8.129.0"
+  }
+}
