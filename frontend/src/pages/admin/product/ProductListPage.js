@@ -1,12 +1,8 @@
-import React , { useState, useEffect  }from 'react'
+import React , {  useEffect  }from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import AdminSidebarNav from '../../../components/nav/AdminSidebar';
-import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
 import Loader from '../../../components/Loader';
-import { allCategory } from '../../../redux/category/asyncActionCreator';
-import { allSub, subDelete, subCreate } from '../../../redux/sub/asyncActionCreator';
 import { productDelete, allProduct } from '../../../redux/product/asyncActionCreator';
-import Search from '../../../components/Search';
 import Message from '../../../components/Message';
 import Card from '../../../components/Card';
 import { productReset } from '../../../redux/product/actionCreator';
@@ -43,7 +39,6 @@ const ProductListPage  = ( { history }) => {
         }
     }
 
-    const searched = keyword => c=> c.name.toLowerCase().includes(keyword);
 
     return (
         <div className="container-fluid">

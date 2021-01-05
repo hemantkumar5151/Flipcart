@@ -12,14 +12,13 @@ const StripeCheckout = () => {
   const [ succeed, setSucceed] = useState('');
   const userReducer = useSelector(state => state.userReducer);
   const paymentReducer = useSelector(state => state.paymentReducer);
-  const cartReducer = useSelector(state => state.cartReducer);
 
   
   const stripe = useStripe();
   const elements = useElements();
   const dispatch = useDispatch();
   
-  const { secret, success: secretSuccess, isLoading: secretLoading , errorMessage: secretErrMessage} = paymentReducer;
+  const { secret,  isLoading: secretLoading ,} = paymentReducer;
   const { currentUser } = userReducer;
   useEffect(() => {
       if(currentUser) {

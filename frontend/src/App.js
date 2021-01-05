@@ -33,7 +33,7 @@ const  ShopPage = lazy(() => import('./pages/shop/ShopPage'))
 const  CartPage = lazy(() => import('./pages/cart/CartPage'))
 const  Drawer = lazy(() => import('./components/drawer/Drawer')) 
 const  CheckOutPage = lazy(() => import('./pages/checkout/CheckOutPage')) 
-
+const AdminPasswordPage = lazy(() => import('./pages/admin/Password'));
 const  Header = lazy(() => import('./components/nav/Header'))
 const  UserRoute = lazy(() => import('./components/Route/UserRoute')) 
 const  AdminRoute = lazy(() => import('./components/Route/AdminRoute')) 
@@ -80,6 +80,7 @@ const App = () => {
         <UserRoute path="/user/password" component={PasswordPage} exact />
         <UserRoute path="/user/wishlist" component={WishlistPage}  exact/>
         <AdminRoute path="/admin/dashboard" component={DashboardPage} exact />
+        <AdminRoute path="/admin/password" component={ AdminPasswordPage} exact />
         <AdminRoute path="/admin/add-category" component={CreateCategoryPage} exact />
         <AdminRoute path="/admin/category/:slug" component={ UpdateCategoryPage } exact />
         <AdminRoute path="/admin/add-sub-category" component={CreateSubPage} exact />

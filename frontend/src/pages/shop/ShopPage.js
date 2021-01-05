@@ -11,7 +11,7 @@ import { Menu, Slider, Checkbox } from 'antd';
 import { DollarOutlined, TrophyOutlined, StarOutlined } from '@ant-design/icons';
 import Star from '../../components/Star';
 import Ratings from '../../components/Rating';
-import { Link } from 'react-router-dom';
+
 const { SubMenu,   } = Menu;
 const ShopPage = () => {
 
